@@ -1,0 +1,41 @@
+; Top Design: "Ermiaa_lib:cell_1:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Ermiaa_lib:cell_1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+model MSub1 MSUB H=1.6 mm Er=4.6 Mur=1 Cond=1.0e+50 Hu=3.9eE+0.34 mil T=0.05 mil TanD=0.002 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL1  N__21 N__6 Subst="MSub1" W=2.9 mm L=16.8 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL2  N__6 0 Subst="MSub1" W=5.08 mm L=16.23 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL3  0 N__5 Subst="MSub1" W=2.9 mm L=16.8 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL4  N__6 N__7 Subst="MSub1" W=25.0 mil L=100.0 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL5  0 0 Subst="MSub1" W=25.0 mil L=100.0 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL6  N__22 N__7 Subst="MSub1" W=2.9 mm L=16.8 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL7  N__7 0 Subst="MSub1" W=5.08 mm L=16.23 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL8  0 N__15 Subst="MSub1" W=2.9 mm L=16.8 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+Port:TermG1  N__16 0 Num=1 Z=50 Ohm Noise=yes 
+"DIODEM1":DIODE1  N__5 N__4 Mode=1 Noise=yes 
+Port:TermG2  N__18 0 Num=2 Z=50 Ohm Noise=yes 
+"DIODEM1":DIODE2  N__4 N__15 Mode=1 Noise=yes 
+V_Source:SRC1  N__16 N__21 Type="VtSine" V[1]=if (_tr_state == 0) then (1 V)*exp(j*2*pi*((0)/360-(0 nsec)*(2.40 GHz)-.25)-(time-(0 nsec))*(0))*step((time-(0 nsec))+tinyreal) else 0 endif Freq[1]=2.40 GHz Vdc=0 V V_Tran=if (_tr_state == 1) then damped_sin(time,0,1 V,2.40 GHz,max(0,0 nsec),0,0) else (1 V)*step(((0 nsec)-time)-tinyreal)*sin(pi*(0)/180) endif SaveCurrent=1 
+V_Source:SRC2  N__18 N__22 Type="VtSine" V[1]=if (_tr_state == 0) then (1 V)*exp(j*2*pi*((0)/360-(0 nsec)*(2.40 GHz)-.25)-(time-(0 nsec))*(0))*step((time-(0 nsec))+tinyreal) else 0 endif Freq[1]=2.40 GHz Vdc=0 V V_Tran=if (_tr_state == 1) then damped_sin(time,0,1 V,2.40 GHz,max(0,0 nsec),0,0) else (1 V)*step(((0 nsec)-time)-tinyreal)*sin(pi*(0)/180) endif SaveCurrent=1 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=10 MHz Stop=5 GHz Step=10 MHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+model DIODEM1 Diode Is=5e-8 Rs=5 Ohm N=100 Cjo=0.18 pF Vj=0.65 V M=0.5 Bv=7 V Ibv=1e-8 AllowScaling=0 Eg=0.69 V 
+Port:TermG3  N__13 0 Num=3 Z=50 Ohm Noise=yes 
+L:L1  N__17 0 L=37.65 nH Noise=yes  
+C:C1  N__17 0 C=188 pF 
+C:C2  N__0 N__17 C=3.2 pF 
+C:C3  N__3 N__13 C=3.2 pF 
+L:L2  N__17 N__3 L=2.22 uH Noise=yes  
+L:L3  N__4 N__0 L=2.22 uH Noise=yes  

@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE Salehi_Oscillatorr_lib Salehi_Oscillatorr_lib
+ASSIGN Salehi_Oscillatorr_lib libMode shared

@@ -1,0 +1,18 @@
+
+hpeesofsim (*) 551.update1.2 Jan 26 2022, MINT version 5
+    (64-bit windows built: Wed Jan 26, 2022 17:36:49 +0000)
+
+
+***** Simulation started at Fri Jan 20 12:06:35 2023
+      Running on host: "Mohammad-HP"
+      In Directory: "D:\ADS projects\Salehi_Mixer_wrk\data"
+      Process ID: 33580
+
+Pt DC convergence is used.
+
+SP SP1[1] <Salehi_Mixer_lib:cell_1:schematic>   freq=(10 MHz->50 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.77 seconds.
+

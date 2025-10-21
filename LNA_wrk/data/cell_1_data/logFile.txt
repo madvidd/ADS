@@ -1,0 +1,32 @@
+
+hpeesofsim (*) 551.update1.2 Jan 26 2022, MINT version 5
+    (64-bit windows built: Wed Jan 26, 2022 17:36:49 +0000)
+
+
+***** Simulation started at Thu Jan 19 21:50:39 2023
+      Running on host: "Mohammad-HP"
+      In Directory: "D:\ADS projects\LNA_wrk\data"
+      Process ID: 11760
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 1
+
+
+SP SP1[1] <LNA_lib:cell_1:schematic>   freq=(9.5 GHz->10.5 GHz)
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    The simulation temperature (25.0 C) is not the same as the IEEE standard
+    noise temperature (290 K or 16.85 C) in the noise analysis `SP1'.
+    If the simulation temperature is not equal to the IEEE standard temperature,
+    then the loss and the noise figure will not agree for a passive circuit.
+    The `Temp' parameter on the Options item can be set to 16.85 C to
+    eliminate this warning message.
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    While evaluating `SNP1.CMP1.NFmin':
+        The provided data file doesn't cover the requested value(s) of `freq'. Therefore the required data was obtained from extrapolation.
+
+
+
+Resource usage:
+  Total stopwatch time     =     0.70 seconds.
+

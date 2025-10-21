@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE Low_Pass_Filter_lib Low_Pass_Filter_lib
+ASSIGN Low_Pass_Filter_lib libMode shared

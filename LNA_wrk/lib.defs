@@ -1,0 +1,12 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE LNA_lib LNA_lib
+ASSIGN LNA_lib libMode shared
+INCLUDE ../Library/RF_Transistors_vendor_kit/lib.defs
+INCLUDE ../Library/System_Lib_vendor_kit/lib.defs
+INCLUDE ../Library/S_Parameter_vendor_kit/lib.defs
+INCLUDE ../Library/RF_Passive_SMT_vendor_kit/lib.defs
+INCLUDE ../Library/Microwave_Transistors_vendor_kit/lib.defs
+INCLUDE ../Library/Meas_SMT_Passive_vendor_kit/lib.defs
+INCLUDE ../Library/HFDiode_vendor_kit/lib.defs
+INCLUDE ../Library/Analog_Parts_vendor_kit/lib.defs

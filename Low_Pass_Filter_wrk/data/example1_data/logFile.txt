@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 551.update1.2 Jan 26 2022, MINT version 5
+    (64-bit windows built: Wed Jan 26, 2022 17:36:49 +0000)
+
+
+***** Simulation started at Mon Nov  7 20:12:22 2022
+      Running on host: "Mohammad-HP"
+      In Directory: "D:\ADS projects\Low_Pass_Filter_wrk\data"
+      Process ID: 17400
+
+
+SP SP1[1] <Low_Pass_Filter_lib:example1:schematic>   freq=(1 GHz->4 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.67 seconds.
+

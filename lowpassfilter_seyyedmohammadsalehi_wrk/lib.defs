@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE lowpassfilter_seyyedmohammadsalehi_lib lowpassfilter_seyyedmohammadsalehi_lib
+ASSIGN lowpassfilter_seyyedmohammadsalehi_lib libMode shared

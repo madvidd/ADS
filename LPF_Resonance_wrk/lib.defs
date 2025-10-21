@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE LPF_Resonance_lib LPF_Resonance_lib
+ASSIGN LPF_Resonance_lib libMode shared

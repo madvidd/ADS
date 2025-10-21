@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 551.update1.2 Jan 26 2022, MINT version 5
+    (64-bit windows built: Wed Jan 26, 2022 17:36:49 +0000)
+
+
+***** Simulation started at Wed May 24 15:07:26 2023
+      Running on host: "Mohammad-HP"
+      In Directory: "D:\ADS projects\LPF_wrk\data"
+      Process ID: 27724
+
+
+SP SP1[1] <LPF_lib:LPF:schematic>   freq=(100 MHz->60 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     3.40 seconds.
+

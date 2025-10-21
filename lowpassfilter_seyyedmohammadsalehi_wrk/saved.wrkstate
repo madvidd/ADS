@@ -1,0 +1,8 @@
+<!DOCTYPE SaveWorkspaceState>
+<SaveWorkspaceState>
+    <Windows>
+        <Schematic y1="-5" height="676" lib="lowpassfilter_seyyedmohammadsalehi_lib" x1="-1" width="1280" view="schematic" geom="1,0,2,0,19,640,676,1280,720" cell="lowpassfilter"/>
+        <DDS name="D:\ADS projects\lowpassfilter_seyyedmohammadsalehi_wrk\lowpassfilter_seyyedmohammadsalehi_lib\lowpassfilter\lowpassfilter.dds"/>
+    </Windows>
+    <MainWindowTab tab="1"/>
+</SaveWorkspaceState>

@@ -1,0 +1,20 @@
+
+hpeesofsim (*) 551.update1.2 Jan 26 2022, MINT version 5
+    (64-bit windows built: Wed Jan 26, 2022 17:36:49 +0000)
+
+
+***** Simulation started at Fri Jan 20 10:07:30 2023
+      Running on host: "Mohammad-HP"
+      In Directory: "D:\ADS projects\oscillator_wrk\data"
+      Process ID: 2380
+
+Warning detected by hpeesofsim during netlist flattening.
+    Capacitor `Q1.CPB' is shorted.
+
+
+SP SP1[1] <oscillator_lib:cell_3:schematic>   freq=(1 GHz->50 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.79 seconds.
+

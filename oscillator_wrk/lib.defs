@@ -1,0 +1,12 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE oscillator_lib oscillator_lib
+ASSIGN oscillator_lib libMode shared
+INCLUDE D:/ADS${__SPACE}projects/Library/Microwave_Transistors_vendor_kit/lib.defs
+INCLUDE D:/ADS${__SPACE}projects/Library/RF_Transistors_vendor_kit/lib.defs
+INCLUDE D:/ADS${__SPACE}projects/Library/System_Lib_vendor_kit/lib.defs
+INCLUDE D:/ADS${__SPACE}projects/Library/S_Parameter_vendor_kit/lib.defs
+INCLUDE D:/ADS${__SPACE}projects/Library/RF_Passive_SMT_vendor_kit/lib.defs
+INCLUDE D:/ADS${__SPACE}projects/Library/Meas_SMT_Passive_vendor_kit/lib.defs
+INCLUDE D:/ADS${__SPACE}projects/Library/HFDiode_vendor_kit/lib.defs
+INCLUDE D:/ADS${__SPACE}projects/Library/Analog_Parts_vendor_kit/lib.defs

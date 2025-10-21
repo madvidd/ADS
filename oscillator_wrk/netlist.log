@@ -1,0 +1,41 @@
+; Top Design: "oscillator_lib:cell_4:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="oscillator_lib:cell_4:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+HB:HB1 MaxOrder=4 Freq[1]=1.0 GHz Order[1]=200 StatusLevel=2 HBSS_WSP=0 OutputPlan="HB1_Output" 
+
+OutputPlan:HB1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=1.0 GHz Order[1]=200 
+
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
+
+R:R4  N__15 vo2 R=500 Ohm Noise=yes 
+model MOSFETM1 MOSFET NMOS=1 PMOS=0 Idsmod=1 Capmod=1 Vto=0.6 Kp=150e-6 Gdsnoi=1 
+C:C1  vo1 0 C=2 pF 
+C:C2  0 vo2 C=2 pF 
+"MOSFETM1":MOSFET1  vo1 vo2 N__1 N__1 Length=0.18 um Width=10 um Mode=1 Noise=yes 
+V_Source:SRC2  N__15 0 Type="V_DC" Vdc=1.8 V SaveCurrent=1 
+I_Source:SRC1  N__1 0 Type="I_DC" Idc=2 mA 
+"MOSFETM1":MOSFET2  vo2 vo1 N__1 N__1 Length=180 nm Width=400 nm Mode=1 Noise=yes 
+R:R3  vo1 N__15 R=500 Ohm Noise=yes 
+L:L11  vo1 N__15 L=12.5 nH R=50 Ohm Noise=yes  
+L:L12  N__15 vo2 L=12.5 nH R=50 Ohm Noise=yes  

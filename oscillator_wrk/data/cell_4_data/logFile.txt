@@ -1,0 +1,31 @@
+
+hpeesofsim (*) 551.update1.2 Jan 26 2022, MINT version 5
+    (64-bit windows built: Wed Jan 26, 2022 17:36:49 +0000)
+
+
+***** Simulation started at Fri Jan 20 15:02:43 2023
+      Running on host: "Mohammad-HP"
+      In Directory: "D:\ADS projects\oscillator_wrk\data"
+      Process ID: 15968
+
+
+HB HB1[1] <oscillator_lib:cell_4:schematic>
+    Number of tones:   1.
+    Number of frequencies:   201.
+    Number of time samples:  512.
+    Number of HB equations (problem size): 2807.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: Krylov (GS_GMRES).
+    Preconditioner: DCP.
+    The general solver is used for HB Krylov preconditioning.
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	143.906 aA  	100.0             
+1 	133.225 aA  	100.0	88.4919 aV  	  1	9.421e-16   
+
+Resource usage:
+  Total stopwatch time     =     0.68 seconds.
+

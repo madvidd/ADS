@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE Microstrip_Compare_lib Microstrip_Compare_lib
+ASSIGN Microstrip_Compare_lib libMode shared

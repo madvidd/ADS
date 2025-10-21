@@ -1,0 +1,21 @@
+
+hpeesofsim (*) 551.update1.2 Jan 26 2022, MINT version 5
+    (64-bit windows built: Wed Jan 26, 2022 17:36:49 +0000)
+
+
+***** Simulation started at Sun Jan 15 17:05:51 2023
+      Running on host: "Mohammad-HP"
+      In Directory: "D:\ADS projects\PLL_wrk\data"
+      Process ID: 24828
+
+Warning detected by hpeesofsim during netlist flattening.
+    Resistor `A1.RSSP' is shorted.
+
+Pt DC convergence is used.
+
+SP SP1[1] <PLL_lib:cell_1:schematic>   freq=(500 MHz->6 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.92 seconds.
+

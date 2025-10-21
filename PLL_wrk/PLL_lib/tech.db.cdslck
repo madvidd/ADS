@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      Mohammad
+HostName                       Mohammad-HP
+ProcessIdentifier              23424
+ProcessCreationTime_UTC        1673703597
+ProcessCreationTime_Readable   Sat Jan 14 17:09:57 2023 Iran Standard Time
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         D:\ADS projects\PLL_wrk\PLL_lib\tech.db.cdslck
+TimeEditLocked                 Sat Jan 14 18:08:27 2023 Iran Standard Time

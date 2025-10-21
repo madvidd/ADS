@@ -1,0 +1,5 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE PLL_lib PLL_lib
+ASSIGN PLL_lib libMode shared
+INCLUDE ../Library/RF_Transistors_vendor_kit/lib.defs

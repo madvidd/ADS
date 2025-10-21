@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 551.update1.2 Jan 26 2022, MINT version 5
+    (64-bit windows built: Wed Jan 26, 2022 17:36:49 +0000)
+
+
+***** Simulation started at Wed Nov  9 19:03:16 2022
+      Running on host: "Mohammad-HP"
+      In Directory: "D:\ADS projects\Resonance_wrk\data"
+      Process ID: 26872
+
+
+SP SP1[1] <Resonance_lib:cell_3:schematic>   freq=(1 GHz->60 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.85 seconds.
+

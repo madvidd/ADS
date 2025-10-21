@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      Mohammad
+HostName                       Mohammad-HP
+ProcessIdentifier              26900
+ProcessCreationTime_UTC        1684911646
+ProcessCreationTime_Readable   Wed May 24 10:30:46 2023 Iran Standard Time
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         D:\ADS projects\BPF_wrk\BPF_lib\%B%P%F\schematic\sch.oa.cdslck
+TimeEditLocked                 Wed May 24 10:47:57 2023 Iran Standard Time

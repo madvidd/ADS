@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 551.update1.2 Jan 26 2022, MINT version 5
+    (64-bit windows built: Wed Jan 26, 2022 17:36:49 +0000)
+
+
+***** Simulation started at Thu Jan 19 17:16:32 2023
+      Running on host: "Mohammad-HP"
+      In Directory: "D:\ADS projects\class_wrk\data"
+      Process ID: 25292
+
+
+SP SP1[1] <class_lib:class:schematic>   freq=(1 GHz->80 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.73 seconds.
+

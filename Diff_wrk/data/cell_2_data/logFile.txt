@@ -1,0 +1,42 @@
+
+hpeesofsim (*) 551.update1.2 Jan 26 2022, MINT version 5
+    (64-bit windows built: Wed Jan 26, 2022 17:36:49 +0000)
+
+
+***** Simulation started at Wed Jan 18 20:37:20 2023
+      Running on host: "Mohammad-HP"
+      In Directory: "C:\Users\Mohammad\Ermia_wrk\data"
+      Process ID: 27204
+
+Warning detected by hpeesofsim during netlist flattening.
+    Issue(s) processing expression `OptimGoal1='dB(S(1,1))'': 
+      (column 1 in FlattenCircuit) 
+Compile error: syntax error.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Issue(s) processing expression `OptimGoal2='dB(S(2,2))'': 
+      (column 1) 
+Compile error: syntax error.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Issue(s) processing expression `OptimGoal3='db(S(3,3))'': 
+      (column 1) 
+Compile error: syntax error.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Insufficient sweep limit specifiers given in `SP1_stim'.
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 5
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    SweepPlan has no points.  Defaulting to 0. 
+
+Pt DC convergence is used.
+
+SP SP1[1] <Ermia_lib:cell_2:schematic>   freq=0 Hz
+
+
+Resource usage:
+  Total stopwatch time     =     2.85 seconds.
+
